@@ -27,13 +27,9 @@ We can also visualize multiplication in plane. $`a{\cdot}b`$ can be thought up a
 ![Multiply_ManimCE_v0 19 0](https://github.com/user-attachments/assets/30a111c0-647e-44d4-9ca6-54541ffffee2)</br>
 
 ## Thinking about Multiple Numbers
-We have worked with 1 number, now let’s see how we can think of 2 numbers(I will write a pair of numbers as $`(a, b)`$). When we visualized 1 number we used a line so for 2 numbers let's use 2 lines. The first number of our pair will be on the first line, and the second number of our pair will be the second line. </br>
+We have worked with 1 number, now let’s see how we can think of 2 numbers(I will write a pair of numbers as $`(a, b)`$). When we visualized 1 number we used a line so for 2 numbers let's use 2 lines. The first number of our pair will be on the first line, and the second number of our pair will be the second line. To visualise these numbers into 1 space let's make the second line perpendicular to the first, and now we have a plane where every point can be represented. </br>
 
-[pic]  </br>
-
-To visualise these numbers in 1 image let's make the second line perpendicular to the first, and now we have a plane where every point can be represented. </br>
-
-[pic] </br>
+![CoordinatePlane_ManimCE_v0 19 0](https://github.com/user-attachments/assets/68edbf5c-b190-4199-94ac-880272dfcccf)
 
 These pairs of numbers are referred to as vectors, more specifically 2 dimensional vectors, I will be calling them as vectors for the rest of this blog convenience sake.
 
