@@ -40,9 +40,8 @@ These vectors similar to real numbers can be added up. The definition of this ad
 When we do this we can see that each of the horizontal components are added up, and each of the vertical components are also added up. Therefore it satisfies our definition of vector addition.
 ![VectorAdditionAgain_ManimCE_v0 19 0](https://github.com/user-attachments/assets/a9a1c9ae-3e74-4c88-b29a-04550d02718a)
 #### Multiplication
-Now there is no way to multiply 2 vector, or at least no one universial way. There is a [Freya Holmér Video](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DhtYh-Tq7ZBI&ved=2ahUKEwii-ZTwyL2OAxV1rlYBHd1eO1QQtwJ6BAgYEAI&usg=AOvVaw1Pof5zvOx6Em9U4nVKYis3) about this topic. However, we can multiply a vector with a real number. The defintion is $`a{\cdot}(b,c)=(a{\cdot}b,a{\cdot}c)`$. Geometrically we can think of this as taking the arrow $`(b,c)`$ and extending it $`a`$ times. </br>
-
-[pic] </br>
+Now there is no way to multiply 2 vector, or at least no one universial way. There is a [Freya Holmér Video](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DhtYh-Tq7ZBI&ved=2ahUKEwii-ZTwyL2OAxV1rlYBHd1eO1QQtwJ6BAgYEAI&usg=AOvVaw1Pof5zvOx6Em9U4nVKYis3) about this topic. However, we can multiply a vector with a real number. The defintion is $`a{\cdot}(b,c)=(a{\cdot}b,a{\cdot}c)`$. Geometrically we can think of this as taking the arrow $`(b,c)`$ and extending it $`a`$ times. 
+![VectorMul_ManimCE_v0 19 0](https://github.com/user-attachments/assets/71bebf78-08ad-4fe7-8300-65766ef16e2e)
 
 ## The Definition of Imaginary Numbers
 I would like you to imagine(pun unintended) an equation. $`x^2={-1}`$, with real numbers there is no x that satisfy this equation, as all real numbers squared are positive.</br>
