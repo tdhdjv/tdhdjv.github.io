@@ -35,24 +35,17 @@ These pairs of numbers are referred to as vectors, more specifically 2 dimension
 
 ### Vector Arithmetics
 #### Addition
-These vectors similar to real numbers can be added up. The definition of this addition is this $`(a,b)+(c,d)=(a+b,c+d)`$. now let's see if we can interpret this geometrically. As we did with real numbers, these vectors can be thought up as arrows pointing from the origin($`(0, 0)`$) to the point in the plane. So it follows that adding 2 vectors will also be the concatenation of these arrows. </br>
-
-[pic] </br>
-
-When we do this we can see that each of the horizontal components are added up, and each of the vertical components are also added up. Therefore it satisfies our definition of vector addition. </br>
-
-[pic] </br>
-
+These vectors similar to real numbers can be added up. The definition of this addition is this $`(a,b)+(c,d)=(a+b,c+d)`$. now let's see if we can interpret this geometrically. As we did with real numbers, these vectors can be thought up as arrows pointing from the origin($`(0, 0)`$) to the point in the plane. So it follows that adding 2 vectors will also be the concatenation of these arrows. 
+![VectorAddition_ManimCE_v0 19 0](https://github.com/user-attachments/assets/21ce5366-c6fb-4f9c-aae7-7f475f4ad5d2)
+When we do this we can see that each of the horizontal components are added up, and each of the vertical components are also added up. Therefore it satisfies our definition of vector addition.
+![VectorAdditionAgain_ManimCE_v0 19 0](https://github.com/user-attachments/assets/a9a1c9ae-3e74-4c88-b29a-04550d02718a)
 #### Multiplication
 Now there is no way to multiply 2 vector, or at least no one universial way. There is a [Freya Holmér Video](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DhtYh-Tq7ZBI&ved=2ahUKEwii-ZTwyL2OAxV1rlYBHd1eO1QQtwJ6BAgYEAI&usg=AOvVaw1Pof5zvOx6Em9U4nVKYis3) about this topic. However, we can multiply a vector with a real number. The defintion is $`a{\cdot}(b,c)=(a{\cdot}b,a{\cdot}c)`$. Geometrically we can think of this as taking the arrow $`(b,c)`$ and extending it $`a`$ times. </br>
 
 [pic] </br>
 
 ## The Definition of Imaginary Numbers
-I would like you to imagine(pun unintended) an equation. $`x^2={-1}`$, with real numbers there is no x that satisfy this equation, as all real numbers squared are positive. </br>
-
-[pic] </br>
-
+I would like you to imagine(pun unintended) an equation. $`x^2={-1}`$, with real numbers there is no x that satisfy this equation, as all real numbers squared are positive.</br>
 However, let us make up a new number $`i`$, and say that $`i^2={-1}`$. With this definition of $`i`$ we can know 2 facts about it. 
 1. $`i`$ is not real(as in numbers)
 2. $`i^2={-1}`$
