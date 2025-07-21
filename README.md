@@ -64,7 +64,7 @@ when adding up 2 complex numbers $`a+b{i}`$ with $`c+d{i}`$, we can see that the
 ### Multiplication with real numbers
 Multiplication of $`a{\cdot}(b+c{i})`$ is defined as $`a{\cdot}b+a{\cdot}c{i}`$.
 
-### Conclusion:
+### Connections with Vectors
 As we can see the complex numbers mirror 2 dimensional vectors, addition, and multiplication with real numbers are the same. Therefore complex numbers can be mapped to a plane. Let's call this plane the complex plane.
 
 ### Complex Multiplication
