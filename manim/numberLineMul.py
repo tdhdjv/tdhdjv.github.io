@@ -47,7 +47,7 @@ class Multiply(Scene):
         arrow.add_updater(
             lambda mob: mob.put_start_and_end_on(
                 positiveNumbers.number_to_point(0.0),
-                positiveNumbers.number_to_point(tracker.get_value()),            
+                positiveNumbers.n2p(tracker.get_value()),            
             )
         )
         self.play(tracker.animate.set_value(3.0))
