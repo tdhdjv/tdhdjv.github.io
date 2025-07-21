@@ -18,7 +18,6 @@ Addition is one of these operations. To think about addition in the number line 
 
 ![NumberLineArrow_ManimCE_v0 19 0](https://github.com/user-attachments/assets/531af2c3-46c6-4f3f-b2b8-3d4b268712e3)
 
-
 Subtraction is the same as adding up a negative number, and since negative numbers are just arrows with the same length pointing backwards, subtraction is already defined.
 
 #### Multiplication:
@@ -36,11 +35,16 @@ These pairs of numbers are referred to as vectors, more specifically 2 dimension
 ### Vector Arithmetics
 #### Addition
 These vectors similar to real numbers can be added up. The definition of this addition is this $`(a,b)+(c,d)=(a+b,c+d)`$. now let's see if we can interpret this geometrically. As we did with real numbers, these vectors can be thought up as arrows pointing from the origin($`(0, 0)`$) to the point in the plane. So it follows that adding 2 vectors will also be the concatenation of these arrows. 
+
 ![VectorAddition_ManimCE_v0 19 0](https://github.com/user-attachments/assets/21ce5366-c6fb-4f9c-aae7-7f475f4ad5d2)
+
 When we do this we can see that each of the horizontal components are added up, and each of the vertical components are also added up. Therefore it satisfies our definition of vector addition.
+
 ![VectorAdditionAgain_ManimCE_v0 19 0](https://github.com/user-attachments/assets/a9a1c9ae-3e74-4c88-b29a-04550d02718a)
+
 #### Multiplication
 Now there is no way to multiply 2 vector, or at least no one universial way. There is a [Freya Holmér Video](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DhtYh-Tq7ZBI&ved=2ahUKEwii-ZTwyL2OAxV1rlYBHd1eO1QQtwJ6BAgYEAI&usg=AOvVaw1Pof5zvOx6Em9U4nVKYis3) about this topic. However, we can multiply a vector with a real number. The defintion is $`a{\cdot}(b,c)=(a{\cdot}b,a{\cdot}c)`$. Geometrically we can think of this as taking the arrow $`(b,c)`$ and extending it $`a`$ times. 
+
 ![VectorMul_ManimCE_v0 19 0](https://github.com/user-attachments/assets/71bebf78-08ad-4fe7-8300-65766ef16e2e)
 
 ## The Definition of Imaginary Numbers
@@ -55,9 +59,7 @@ Now that we define imaginary numbers and real numbers. Let's add them together. 
 ### Complex Arithmetic
 
 #### Addition:
-when adding up 2 complex numbers $`a+b{i}`$ with $`c+d{i}`$, we can see that the real, and the imaginary parts can be added together to get $`(a+c)+(b+d){i}`$.  </br>
-
-[pic]. </br>
+when adding up 2 complex numbers $`a+b{i}`$ with $`c+d{i}`$, we can see that the real, and the imaginary parts can be added together to get $`(a+c)+(b+d){i}`$. 
 
 ### Multiplication with real numbers
 Multiplication of $`a{\cdot}(b+c{i})`$ is defined as $`a{\cdot}b+a{\cdot}c{i}`$.
@@ -77,9 +79,9 @@ With these properties we can define complex number multiplications. $`(a+b{i}){\
 There is a sense in which complex numbers can encode rotating in 2d spaces. there is a famous equation showing this $`e^{i{\pi}}={-1}`$. the general case being $`e^{{i}x}=cos{x}+{i}sin{t}`$. Although 3b1b has already made a [video](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3Dv0YEaeIClKY&ved=2ahUKEwiL9Kyjz72OAxVUrVYBHc3XNQ4QtwJ6BAgTEAI&usg=AOvVaw3mfbkRSaPOODDaVBFlPXZk) about this. However I will explain it here as this is crucial for the rest of the blog.</br>
 
 ### Times i is rotation
-when a $`1`$ is multiplied by $`i`$ it becomes $`i`$, and when $`i`$ is multiplied by $`{i}`$ it $`-1`$ becomes we see that it rotates the number 90 degrees clockwise. </br>
+when a $`1`$ is multiplied by $`i`$ it becomes $`i`$, and when $`i`$ is multiplied by $`{i}`$ it $`-1`$ becomes we see that it rotates the number 90 degrees clockwise. 
 
-[pic] </br>
+[pic]
 
 We can extend this to every complex number, as complex numbers are composed of $`1`$'s and $`i`$'s. </br>
 
