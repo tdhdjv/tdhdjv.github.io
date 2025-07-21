@@ -81,7 +81,7 @@ There is a sense in which complex numbers can encode rotating in 2d spaces. ther
 ### Times i is rotation
 when a $`1`$ is multiplied by $`i`$ it becomes $`i`$, and when $`i`$ is multiplied by $`{i}`$ it $`-1`$ becomes we see that it rotates the number 90 degrees clockwise. 
 
-[pic]
+![TimesImaginary_ManimCE_v0 19 0](https://github.com/user-attachments/assets/e73cf52b-9149-4025-a521-528f41b6c446)
 
 We can extend this to every complex number, as complex numbers are composed of $`1`$'s and $`i`$'s. </br>
 
