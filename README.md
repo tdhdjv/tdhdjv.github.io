@@ -84,15 +84,15 @@ when a $`1`$ is multiplied by $`i`$ it becomes $`i`$, and when $`i`$ is multipli
 ![TimesImaginary_ManimCE_v0 19 0](https://github.com/user-attachments/assets/e73cf52b-9149-4025-a521-528f41b6c446)
 
 ### Deriving meaning from $`\mathbf{e^{x{i}}}`$
-Now the important part, let’s think about the $`f(t)=e^{t{i}}`$. If we were to differentiate this function $`f'(t)=i{\cdot}e^{{i}t}`$. $`e^it`$ is $`f(t)`$. This means if $`t`$ is thought up as time $`f(t)`$ moves direction perpendicular to its position from the origin. </br>
+Now the important part, let’s think about the $`f(t)=e^{{i}t}`$. If we were to differentiate this function $`f'(t)=i{\cdot}e^{{i}t}`$.</br> $`e^{it}`$ is $`f(t)`$. This means if $`t`$ is thought up as time $`f(t)`$ moves direction perpendicular to its position from the origin. 
+
+![EipiVelocity_ManimCE_v0 19 0](https://github.com/user-attachments/assets/e7fae2ae-9062-4557-847d-11e366131ea4)
+
+When a circle, whose center is the origin. Then think about a moving point in a circle. We will find that the tangent to the circle is to the position from the origin. Since the tangent is the direction in which the point moves, you can induce that the function $`f(t)=e^{{i}t}`$ moves in a circle. </br>
 
 [pic] </br>
 
-When a circle, whose center is the origin. Then think about a moving point in a circle. We will find that the tangent to the circle is to the position from the origin. Since the tangent is the direction in which the point moves, you can induce that the function $`f(t)=e^{t{i}}`$ moves in a circle. </br>
-
-[pic] </br>
-
-Now we currently don’t know the radius of the circle in which $`e^{t{i}}`$ moves. However when $`t=0`$. The function becomes $`e^{0{i}}=e^0=1`$, Therefore the starting point of the function is 1. and the radius of the circle is 1. </br>
+Now we currently don’t know the radius of the circle in which $`e^{{i}t}`$ moves. However when $`t=0`$. The function becomes $`e^{0{i}}=e^0=1`$, Therefore the starting point of the function is 1. and the radius of the circle is 1. </br>
 
 [pic] </br>
 
@@ -100,10 +100,10 @@ Now let us observe the speed in which this point moves. The speed in which the p
 
 [pic]  </br>
 
-In conclusion the $`e^{t{i}}`$ is equal to a point on a unit circle with angle $`t`$ in the complex plane, which is $`cos{t}+{i}sin{t}`$.
+In conclusion the $`e^{{i}t}`$ is equal to a point on a unit circle with angle $`t`$ in the complex plane, which is $`cos{t}+{i}sin{t}`$.
 
 ## Quaternions:
-If we look back at [the definition of imaginary numbers](#The-Definition-of-Imaginary-Numbers). We used the equation $`x^2=-1`$. Now Let’s suppose there are actually 3 numbers*(technically 6 since negative) that satisfies this equation $`i`$, $`j`$, $`k`$. these are also imaginary numbers. We will also define $`ijk=-1`$. These are what is used to define Quaternions. </br>
+If we look back at [the definition of imaginary numbers](#The-Definition-of-Imaginary-Numbers). We used the equation $`x^2=-1`$. Now Let’s suppose there are 3 numbers that satisfies this equation $`i`$, $`j`$, $`k`$ (technically 6 since $`-i`, $`-j`, $`-k`). these are also imaginary numbers. We will also define $`ijk=-1`$. These are what is used to define Quaternions. </br>
 
 [pic]  </br>
 
@@ -129,20 +129,20 @@ In the imaginary space, when multiplying $`k`$ to $`i`$ it becomes $`j`$. when m
 
 [pic] </br>
 
-We can see the parallel with the complex numbers. using this fact Let's multiply $`e^{t{i}}`$ with $`q=a{j}+b{k}`$. if let $`f(t)=e^{t{i}}q`$. then $`f'(t)={i}f(t)`$, and so q is rotated t degrees around the $`i`$ axis!. </br>
+We can see the parallel with the complex numbers. using this fact Let's multiply $`e^{{i}t}`$ with $`q=a{j}+b{k}`$. if let $`f(t)=e^{{i}t}q`$. then $`f'(t)={i}f(t)`$, and so q is rotated t degrees around the $`i`$ axis!. </br>
 
 [pic] </br>
 
 With this we have successfully defined a rotation around the $`i`$ axis. </br>
-Except… ****NO!**** watch what happens when $`i`$ is multiplied with $`e^{t{i}}`$ </br>
+Except… ****NO!**** watch what happens when $`i`$ is multiplied with $`e^{{i}t}`$ </br>
 
 [gif] </br>
 
-You can see that $`i`$ is shrinking and growing. What we want to happen is for $`i`$ to remain the same. Then how come that our function failed? If we look back at when $`e^{t{i}}`$ originaly did, we will remember that $`e^{t{i}}`$ rotated $`i`$ in the complex plane. Therefore $`i`$ shrinking was the consequence of this. 
+You can see that $`i`$ is shrinking and growing. What we want to happen is for $`i`$ to remain the same. Then how come that our function failed? If we look back at when $`e^{{i}t}`$ originaly did, we will remember that $`e^{{i}t}`$ rotated $`i`$ in the complex plane. Therefore $`i`$ shrinking was the consequence of this. 
 
 [pic] </br>
 
-One way to remedy this we can multiply $`e^{-t{i}}`$. This time we will multiply on the right side. By doing this we kept $`i`$, Then how will this new function affect $`j`$ and $`k`$? With the function $`f(t)=e^{t{i}}{\cdot}q{\cdot}e^{-t{i}}`$ we already know what $`e^{t{i}}`$ does, so we focus on $`q{\cdot}e^{-it}`$ and call it $`g(t)`$. If we differetiate $`q{\cdot}e^{-it}`$ we get $`q{\cdot}{(-i)}{\cdot}e^{-it}`$ if we assume $`q`$ is only composed of $`j`$ and $`k`$ then we know that we can swap $`(-i)`$ and $`q`$. and negate it. then the derivate becomes $`{i}{\cdot}q{\cdot}e^{-t{i}}={i}{\cdot}g(t)`$. We can see that this is also a rotation around the $`i`$ axis by $`t`$. This means the f(x) will rotate any quaternions about the $`i`$ axis by $`2t`$. Since we want to rotate by $`t`$ we can change the function to $`f(t)=e^{\frac{t{i}}{2}}{\cdot}q{\cdot}e^{-\frac{t{i}}{2}}`$.
+One way to remedy this we can multiply $`e^{-{i}t}`$. This time we will multiply on the right side. By doing this we kept $`i`$, Then how will this new function affect $`j`$ and $`k`$? With the function $`f(t)=e^{{i}t}{\cdot}q{\cdot}e^{-{i}t}`$ we already know what $`e^{{i}t}`$ does, so we focus on $`q{\cdot}e^{-it}`$ and call it $`g(t)`$. If we differetiate $`q{\cdot}e^{-it}`$ we get $`q{\cdot}{(-i)}{\cdot}e^{-it}`$ if we assume $`q`$ is only composed of $`j`$ and $`k`$ then we know that we can swap $`(-i)`$ and $`q`$. and negate it. then the derivate becomes $`{i}{\cdot}q{\cdot}e^{-{i}t}={i}{\cdot}g(t)`$. We can see that this is also a rotation around the $`i`$ axis by $`t`$. This means the f(x) will rotate any quaternions about the $`i`$ axis by $`2t`$. Since we want to rotate by $`t`$ we can change the function to $`f(t)=e^{\frac{{i}t}{2}}{\cdot}q{\cdot}e^{-\frac{{i}t}{2}}`$.
 
 ## Generalization to any Axis:
 Just like we did with $`i`$, multiplying by $`j`$ and $`k`$ lead to a 90 rotation around their repective axis. This mean we can generalize the function to work for all 3 axis. Now how could we generalize this to work for any axis? Let's say there are 2 vectors $`\vec{p}`$, $`\vec{q}`$ which is rotating once per second around a vector $`\vec{r}`$. now Let's say the velocity in which $`\vec{p}`$ and $`\vec{q}`$ is $`\vec{v_p}`$, $`\vec{v_q}`$. Now the velocity in which $`\vec{p} + \vec{q} `$ move's is equal to $`\vec{v_p} +\vec{v_q}`$.</br>
@@ -160,7 +160,7 @@ Using this fact we can say that if you want $`\vec{r}`$ rotate around a $`\vec{p
 So if I want to rotate a quaternion $`p`$ around a quaternion $`q=a{i}+b{j}+c{k}`$ with a length of 1. We would have $`e^{t\frac{a{i}+b{j}+c{j}}{2}}{\cdot}p{\cdot}e^{-t\frac{a{i}+b{j}+c{j}}{2}}`$ which is just $`e^{t\frac{q}{2}}{\cdot}p{\cdot}e^{-t\frac{q}{2}}`$.
 
 ## Computing $`\mathbf{e^{t{q}}}`$
-We have used the notation $`e^{t{q}}`$ where q has a length of 1 and doesn't have a real part. However, we have never computed this value. so let’s think about how we would compute this value. When thinking about $`e^{t{i}}`$ we used a complex plane with the y axis being $`i`$. Now if we think of $`e^{t{q}}`$ with the y axis being $`q`$, you will find that $`1{\cdot}q=q`$, and $`q{\cdot}q=-1`$. Therefore we can use the same logic and say that $`e^{t{q}}`$ will be a point in a circle, however with the y axis being $`q`$. meaning $`e^{t{q}}=cos{t}+{q}sin{t}`$. </br>
+We have used the notation $`e^{t{q}}`$ where q has a length of 1 and doesn't have a real part. However, we have never computed this value. so let’s think about how we would compute this value. When thinking about $`e^{{i}t}`$ we used a complex plane with the y axis being $`i`$. Now if we think of $`e^{t{q}}`$ with the y axis being $`q`$, you will find that $`1{\cdot}q=q`$, and $`q{\cdot}q=-1`$. Therefore we can use the same logic and say that $`e^{t{q}}`$ will be a point in a circle, however with the y axis being $`q`$. meaning $`e^{t{q}}=cos{t}+{q}sin{t}`$. </br>
 
 [pic] </br>
 
