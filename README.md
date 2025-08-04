@@ -85,12 +85,13 @@ There is a sense in which complex numbers can encode rotating in 2d spaces. ther
 ### Times i is rotation
 when a $`1`$ is multiplied by $`i`$ it becomes $`i`$, and when $`i`$ is multiplied by $`{i}`$ it $`-1`$ becomes we see that it rotates the number 90 degrees clockwise. As all complex numbers are composed of $`{i}`s and $`1`s, This extends to all the complex numbers.
 
-![ComplexRotation_ManimCE_v0 19 0](https://github.com/user-attachments/assets/dfa3d83a-40e6-44cf-8a0b-a70ee2256e61)
+
+![ComplexTimesI_ManimCE_v0 19 0](https://github.com/user-attachments/assets/5ee2f319-6bbf-4c94-9691-3eb34fc9908d)
 
 ### Deriving meaning from $`\mathbf{e^{x{i}}}`$
 Now the important part, let’s think about the $`f(t)=e^{{i}t}`$. If we were to differentiate this function $`f'(t)=i{\cdot}e^{{i}t}`$.</br> $`e^{it}`$ is $`f(t)`$. This means if $`t`$ is thought up as time $`f(t)`$ moves direction perpendicular to its position from the origin. 
 
-![Uploading ComplexTimesI_ManimCE_v0.19.0.gif…]()
+![ComplexRotation_ManimCE_v0 19 0](https://github.com/user-attachments/assets/dfa3d83a-40e6-44cf-8a0b-a70ee2256e61)
 
 When a circle, whose center is the origin. Then think about a moving point in a circle. We will find that the tangent to the circle is to the position from the origin. Since the tangent is the direction in which the point moves, you can induce that the function $`f(t)=e^{{i}t}`$ moves in a circle. </br>
 
