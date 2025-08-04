@@ -103,7 +103,7 @@ Now let us observe the speed in which this point moves. The speed in which the p
 In conclusion the $`e^{{i}t}`$ is equal to a point on a unit circle with angle $`t`$ in the complex plane, which is $`cos{t}+{i}sin{t}`$.
 
 ## Quaternions:
-If we look back at [the definition of imaginary numbers](#The-Definition-of-Imaginary-Numbers). We used the equation $`x^2=-1`$. Now Let’s suppose there are 3 numbers that satisfies this equation $`i`$, $`j`$, $`k`$ (technically 6 since $`-i`, $`-j`, $`-k`). these are also imaginary numbers. We will also define $`ijk=-1`$. These are what is used to define Quaternions. </br>
+If we look back at [the definition of imaginary numbers](#The-Definition-of-Imaginary-Numbers). We used the equation $`x^2=-1`$. Now Let’s suppose there are 3 numbers that satisfies this equation $`i`$, $`j`$, $`k`$ (technically 6 since $`-i`$, $`-j`$, $`-k`$). these are also imaginary numbers. We will also define $`ijk=-1`$. These are what is used to define Quaternions. </br>
 
 [pic]  </br>
 
@@ -134,7 +134,7 @@ We can see the parallel with the complex numbers. using this fact Let's multiply
 [pic] </br>
 
 With this we have successfully defined a rotation around the $`i`$ axis. </br>
-Except… ****NO!**** watch what happens when $`i`$ is multiplied with $`e^{{i}t}`$ </br>
+Except… ***NO!*** watch what happens when $`i`$ is multiplied with $`e^{{i}t}`$ </br>
 
 [gif] </br>
 
