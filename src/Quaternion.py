@@ -42,9 +42,9 @@ class QuaternionRotation(ThreeDScene):
         axes = ThreeDAxes(
             x_range=[-4, 4, 1], y_range=[-4, 4, 1], x_length=8.0, y_length=8.0
         )
-        xlabel = axes.get_x_axis_label(label="i")
-        ylabel = axes.get_y_axis_label(label="j", rotation=0)
-        zlabel = axes.get_z_axis_label(label="k")
+        xlabel = axes.get_x_axis_label(label="j")
+        ylabel = axes.get_y_axis_label(label="k", rotation=0)
+        zlabel = axes.get_z_axis_label(label="i")
 
         arrow = Arrow3D(axes.c2p(0, 0, 0), axes.c2p(1, 0, 0), color=YELLOW)
 
@@ -52,18 +52,18 @@ class QuaternionRotation(ThreeDScene):
         basis1 = Arrow3D(axes.c2p(0, 0, 0), axes.c2p(2, 0, 0), color=RED)
         basis2 = Arrow3D(axes.c2p(0, 0, 0), axes.c2p(0, 3, 0), color=GREEN)
 
-        label = MathTex("i", color=YELLOW).move_to(axes.c2p(0.5, 0) + 0.5 * UP)
-        label1 = MathTex(r"i{\cdot}k", color=YELLOW).move_to(
+        label = MathTex("j", color=YELLOW).move_to(axes.c2p(0.5, 0) + 0.5 * UP)
+        label1 = MathTex(r"i{\cdot}j", color=YELLOW).move_to(
             axes.c2p(0.5, 0, 0) + 0.5 * UP
         )
-        label2 = MathTex("j", color=YELLOW).move_to(axes.c2p(0, 0.5) + 0.5 * LEFT)
-        label3 = MathTex(r"j{\cdot}k", color=YELLOW).move_to(
+        label2 = MathTex("k", color=YELLOW).move_to(axes.c2p(0, 0.5) + 0.5 * LEFT)
+        label3 = MathTex(r"i{\cdot}k", color=YELLOW).move_to(
             axes.c2p(0, 0.5) + 0.5 * LEFT
         )
-        label4 = MathTex("-i", color=YELLOW).move_to(axes.c2p(-0.5, 0) + 0.5 * UP)
+        label4 = MathTex("-j", color=YELLOW).move_to(axes.c2p(-0.5, 0) + 0.5 * UP)
 
-        anotherLabel = MathTex("2i+3j", color=BLUE).move_to(axes.c2p(1, 1.5) + RIGHT)
-        anotherLabel1 = MathTex("-3i+2j", color=BLUE).move_to(axes.c2p(-1.5, 1) + UP)
+        anotherLabel = MathTex("2j+3k", color=BLUE).move_to(axes.c2p(1, 1.5) + RIGHT)
+        anotherLabel1 = MathTex("-3j+2k", color=BLUE).move_to(axes.c2p(-1.5, 1) + UP)
 
         self.add(axes)
         self.add(xlabel)
@@ -127,7 +127,7 @@ class QuaternionEIPi(Scene):
             x_length=12.0,
             y_length=6.0,
         )
-        labels = numberPlane.get_axis_labels(x_label="i", y_label="j")
+        labels = numberPlane.get_axis_labels(x_label="j", y_label="k")
 
         tracker = ValueTracker()
         tracker.set_value(0.0)
@@ -149,7 +149,7 @@ class QuaternionEIPi(Scene):
             buff=0,
             color=YELLOW,
         )
-        label = MathTex("q=i+2j", color=YELLOW).move_to(1.2 * numberPlane.c2p(1, 2))
+        label = MathTex("q=j+2k", color=YELLOW).move_to(1.2 * numberPlane.c2p(1, 2))
 
         self.add(numberPlane)
         self.add(equation)
