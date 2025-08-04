@@ -1,7 +1,7 @@
 # SoME4nion
 
 ## Introduction
-If you've worked on computer graphics, computer vision, robotics or something related to quaternions. It's likely that you have heard of **quaternions**. There are already a plethora amount of videos, and online resources, explaining **quaternions**. However many of these resources either focus only on the application, skipping over a lot of the math, or explain using algebra, which doesn't build an intuitive relation behind quaternions and 3D rotation. This blog is my attempt to explain **quaternions** in a mathematical way, building from the foundation and giving a geometric interpretation of **quaternions**.
+If you've worked on computer graphics, computer vision, robotics or something related to quaternions. It's likely that you have heard of **quaternions**. There are already a plethora amount of videos, and online resources, explaining **quaternions**. However many of these resources either focus only on the application, skipping over a lot of the math, or explain using algebra. This doesn't build an intuitive relation behind quaternions and 3D rotation. This blog is my attempt to explain **quaternions** in a mathematical way, building from the foundation and giving a geometric interpretation of **quaternions**. We will start from real numbers, work our way into 2 dimensions, explain the famous $`e^{ix}`$ and will connect all that into **quaternions**.
 
 ## Real Numbers
 When we think of numbers we usually think of numbers, numbers such as 1, 2, 3.14159265 seem to come to mind. We are familiar with these numbers as they are used all the time. These numbers are called real numbers(kind of a terrible name but whatever). When it comes to visualizing the real numbers, a common way of doing so is with a number line. The number line starts from 0 and as the values get bigger as you go right, and as it gets smaller you go left.  </br>
@@ -144,23 +144,15 @@ You can see that $`i`$ is shrinking and growing. What we want to happen is for $
 One way to remedy this we can multiply $`e^{-{i}t}`$. This time we will multiply on the right side. By doing this we kept $`i`$, Then how will this new function affect $`j`$ and $`k`$? With the function $`f(t)=e^{{i}t}{\cdot}q{\cdot}e^{-{i}t}`$ we already know what $`e^{{i}t}`$ does, so we focus on $`q{\cdot}e^{-it}`$ and call it $`g(t)`$. If we differetiate $`q{\cdot}e^{-it}`$ we get $`q{\cdot}{(-i)}{\cdot}e^{-it}`$ if we assume $`q`$ is only composed of $`j`$ and $`k`$ then we know that we can swap $`(-i)`$ and $`q`$. and negate it. then the derivate becomes $`{i}{\cdot}q{\cdot}e^{-{i}t}={i}{\cdot}g(t)`$. We can see that this is also a rotation around the $`i`$ axis by $`t`$. This means the f(x) will rotate any quaternions about the $`i`$ axis by $`2t`$. Since we want to rotate by $`t`$ we can change the function to $`f(t)=e^{\frac{{i}t}{2}}{\cdot}q{\cdot}e^{-\frac{{i}t}{2}}`$.
 
 ## Generalization to any Axis:
-Just like we did with $`i`$, multiplying by $`j`$ and $`k`$ lead to a 90 rotation around their repective axis. This mean we can generalize the function to work for all 3 axis. Now how could we generalize this to work for any axis? Let's say there are 2 vectors $`\vec{p}`$, $`\vec{q}`$ which is rotating once per second around a vector $`\vec{r}`$. now Let's say the velocity in which $`\vec{p}`$ and $`\vec{q}`$ is $`\vec{v_p}`$, $`\vec{v_q}`$. Now the velocity in which $`\vec{p} + \vec{q} `$ move's is equal to $`\vec{v_p} +\vec{v_q}`$.</br>
-
-[pic]</br>
-
-Now let's think of a different scenario. Have $`\vec{p}`$ be rotate around $`\vec{q}`$. let the velocity of $`\vec{p}`$ be $`\vec{v_p}`$. If we were to set $`\vec{q}`$ to be rotating around $`\vec{p}`$, we will find out that $`\vec{q}`$'s velocity is equal and opposite to $`\vec{v_p}`$ </br>
-
-[pic] </br>
-
-Using this fact we can say that if you want $`\vec{r}`$ rotate around a $`\vec{p} + \vec{q}`$, the velocity of $`\vec{r}`$ will be the sum of the velocity when rotating around $`\vec{p}`$, and the velocity when rotating around $`\vec{q}`$. In simple terms, you can deconstruct the velocity of a rotation into its basis components. </br>
-
-[pic] </br>
-
-So if I want to rotate a quaternion $`p`$ around a quaternion $`q=a{i}+b{j}+c{k}`$ with a length of 1. We would have $`e^{t\frac{a{i}+b{j}+c{j}}{2}}{\cdot}p{\cdot}e^{-t\frac{a{i}+b{j}+c{j}}{2}}`$ which is just $`e^{t\frac{q}{2}}{\cdot}p{\cdot}e^{-t\frac{q}{2}}`$.
+Just like we did with $`i`$, multiplying by $`j`$ and $`k`$ lead to a 90 rotation around their repective axis. One thing to note is that quaternion multiplication is associative, and this property is shared with quaternions. Therefore if you want to rotate a quaternion $`p`$ around a quaternion $`q=a{i}+b{j}+c{k}`$ with a length of 1. We would have $`e^{t\frac{a{i}+b{j}+c{j}}{2}}{\cdot}p{\cdot}e^{-t\frac{a{i}+b{j}+c{j}}{2}}`$ which is just $`e^{t\frac{q}{2}}{\cdot}p{\cdot}e^{-t\frac{q}{2}}`$.
 
 ## Computing $`\mathbf{e^{t{q}}}`$
 We have used the notation $`e^{t{q}}`$ where q has a length of 1 and doesn't have a real part. However, we have never computed this value. so let’s think about how we would compute this value. When thinking about $`e^{{i}t}`$ we used a complex plane with the y axis being $`i`$. Now if we think of $`e^{t{q}}`$ with the y axis being $`q`$, you will find that $`1{\cdot}q=q`$, and $`q{\cdot}q=-1`$. Therefore we can use the same logic and say that $`e^{t{q}}`$ will be a point in a circle, however with the y axis being $`q`$. meaning $`e^{t{q}}=cos{t}+{q}sin{t}`$. </br>
 
-[pic] </br>
-
 ## Conclusions
+
+Through this blog, We've explored ways to represent numbers, real and imaginary in a geometric space. We've also looked through ways to expand $`e^{ix}`$ to work with quaternions, Building a connection between quaternions and 3 dimensional rotation. Hopefully after reading through, you have got a clear understanding of how quaternions relate to 3D rotation, and I hope you have a **great** rest of your day!
+
+----
+
+#### Animations seen above were created using the [Manim Library](https://www.manim.community/)
