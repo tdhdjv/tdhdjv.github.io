@@ -126,11 +126,11 @@ Since quaternions are made up of 4 numbers we would have to use a 4d space to re
 
 In the imaginary space, when multiplying $`k`$ to $`i`$ it becomes $`j`$. when multiplying $`j`$ to $`i`$ it becomes $`-k`$. We can see that both $`j`$ and $`k`$ are rotated 90 degrees with the axis of rotation being $`i`$. </br>
 
-![QuaternionRotation_ManimCE_v0 19 0](https://github.com/user-attachments/assets/ded88975-8b21-4f34-aad9-9cd1635f3b48)
+![QuaternionRotation_ManimCE_v0 19 0](https://github.com/user-attachments/assets/378a5fed-0c4c-46e1-98e8-38e773f04b84)
 
 We can see the parallel with the complex numbers. using this fact Let's multiply $`e^{{i}t}`$ with $`q=a{j}+b{k}`$. if let $`f(t)=e^{{i}t}q`$. then $`f'(t)={i}f(t)`$, and so q is rotated t degrees around the $`i`$ axis!. </br>
 
-![QuaternionEIPi_ManimCE_v0 19 0](https://github.com/user-attachments/assets/1f46b4c6-5558-49c9-970b-8ef52406f8ed)
+![QuaternionEIPi_ManimCE_v0 19 0](https://github.com/user-attachments/assets/f9a62fc9-ad28-4e50-8569-b1c3a6a34a9a)
 
 With this we have successfully defined a rotation around the $`i`$ axis. </br>
 Except… ***NO!*** watch what happens when $`i`$ is multiplied with $`e^{{i}t}`$ </br>
